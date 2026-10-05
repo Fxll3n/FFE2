@@ -1,2 +1,6 @@
 # Normalize line endings for every file Git considers text.
 * text=auto eol=lf
+
+/**        export-ignore
+/addons    !export-ignore
+/addons/** !export-ignore
