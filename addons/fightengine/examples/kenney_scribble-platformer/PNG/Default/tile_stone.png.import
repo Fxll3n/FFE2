@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dn2qy1am3qwh4"
-path="res://.godot/imported/tile_stone.png-9f5a15f1b9c96bcf858cba8ed1e065fa.ctex"
+path="res://.godot/imported/tile_stone.png-fe18a32e3690680e42fbfd8180c8c55d.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://addons/fcollisions/examples/kenney_scribble-platformer/PNG/Default/tile_stone.png"
-dest_files=["res://.godot/imported/tile_stone.png-9f5a15f1b9c96bcf858cba8ed1e065fa.ctex"]
+source_file="res://addons/fightengine/examples/kenney_scribble-platformer/PNG/Default/tile_stone.png"
+dest_files=["res://.godot/imported/tile_stone.png-fe18a32e3690680e42fbfd8180c8c55d.ctex"]
 
 [params]
 

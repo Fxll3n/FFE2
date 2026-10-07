@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cnjod0ots6fej"
-path="res://.godot/imported/tile_coin.png-a1eb0ddaad3cabe372d90defa77b5f0a.ctex"
+path="res://.godot/imported/tile_coin.png-5eb6f60a1240db2caf76b86a5d10dd6f.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://addons/fcollisions/examples/kenney_scribble-platformer/PNG/Default/tile_coin.png"
-dest_files=["res://.godot/imported/tile_coin.png-a1eb0ddaad3cabe372d90defa77b5f0a.ctex"]
+source_file="res://addons/fightengine/examples/kenney_scribble-platformer/PNG/Default/tile_coin.png"
+dest_files=["res://.godot/imported/tile_coin.png-5eb6f60a1240db2caf76b86a5d10dd6f.ctex"]
 
 [params]
 

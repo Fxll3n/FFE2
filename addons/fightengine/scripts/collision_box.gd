@@ -32,23 +32,16 @@ class_name CollisionBox2D extends Node2D
 		collider.shape = value
 
 ## The physics collision layer this box belongs to.
-# TODO: BUG #1
-# Accessing area before _ready() causes a null reference error when set during instantiation.
 @export_flags_2d_physics var collision_layer: int = 1:
 	set(value):
 		collision_layer = value
 		area.collision_layer = value
 
 ## The physics collision mask this box scans.
-# TODO: BUG #2
-# Accessing area before _ready() causes a null reference error when set during instantiation.
 @export_flags_2d_physics var collision_mask: int = 1:
 	set(value):
 		collision_mask = value
 		area.collision_mask = value
-
-## Timer tracking delay between ticks.
-var _time_until_tick: float = 0.0
 
 ## Counter for remaining active ticks.
 var _tick_counter: int = -1:
@@ -67,8 +60,6 @@ var _collisions_left: int = -1:
 
 ## Initializes area and collider children and configures initial tick delay.
 func _ready() -> void:
-	_time_until_tick = 1.0 / ProjectSettings.get_setting("fcollision/config/tick_rate", 20)
-	
 	area.collision_layer = collision_layer
 	area.collision_mask = collision_mask
 	
@@ -77,16 +68,16 @@ func _ready() -> void:
 	collider.debug_color = Color(0.0, 0.0, 0.0, 0.42)
 	collider.shape = shape
 
+func _enter_tree() -> void:
+	TickManager.register_box(self)
+
+func _exit_tree() -> void:
+	TickManager.unregister_box(self)
+
 ## Virtual callback when this Box is intersecting with another CollisionBox2D.
 func _on_collision(box: CollisionBox2D) -> void:
 	if _collisions_left > 0:
 		_collisions_left -= 1
-
-func _process(delta: float) -> void:
-	_time_until_tick -= delta
-	if _time_until_tick <= 0:
-		_tick()
-		_time_until_tick = 1.0 / ProjectSettings.get_setting("fcollision/config/tick_rate", 20)
 
 ## Executes physics query and updates lifetime tick counter.
 func _tick() -> void:

@@ -13,10 +13,23 @@ config_version=5
 config/name="Collisions Plugin"
 config/features=PackedStringArray("4.7")
 
+[autoload]
+
+TickManager="*uid://dy8vdr5610s8i"
+
+[display]
+
+window/stretch/mode="canvas_items"
+window/stretch/aspect="expand"
+
 [editor_plugins]
 
-enabled=PackedStringArray("res://addons/fcollisions/plugin.cfg")
+enabled=PackedStringArray("res://addons/fightengine/plugin.cfg")
 
 [fcollision]
+
+config/tick_rate=20
+
+[fight_engine]
 
 config/tick_rate=20

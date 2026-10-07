@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://yuxd14owcvvk"
-path="res://.godot/imported/tile_slope.png-d36bc62374ceebd264579b4de7a75597.ctex"
+path="res://.godot/imported/tile_slope.png-a5620f6a9800a984fe7309a8efe5d95d.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://addons/fcollisions/examples/kenney_scribble-platformer/PNG/Default/tile_slope.png"
-dest_files=["res://.godot/imported/tile_slope.png-d36bc62374ceebd264579b4de7a75597.ctex"]
+source_file="res://addons/fightengine/examples/kenney_scribble-platformer/PNG/Default/tile_slope.png"
+dest_files=["res://.godot/imported/tile_slope.png-a5620f6a9800a984fe7309a8efe5d95d.ctex"]
 
 [params]
 

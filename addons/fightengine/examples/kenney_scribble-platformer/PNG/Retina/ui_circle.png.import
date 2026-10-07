@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://py1q7ujxjq7y"
-path="res://.godot/imported/ui_circle.png-8d832acb41128af1bc81c366e70769d2.ctex"
+path="res://.godot/imported/ui_circle.png-21b95ffee6dea18db3994a5022129aa8.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://addons/fcollisions/examples/kenney_scribble-platformer/PNG/Retina/ui_circle.png"
-dest_files=["res://.godot/imported/ui_circle.png-8d832acb41128af1bc81c366e70769d2.ctex"]
+source_file="res://addons/fightengine/examples/kenney_scribble-platformer/PNG/Retina/ui_circle.png"
+dest_files=["res://.godot/imported/ui_circle.png-21b95ffee6dea18db3994a5022129aa8.ctex"]
 
 [params]
 

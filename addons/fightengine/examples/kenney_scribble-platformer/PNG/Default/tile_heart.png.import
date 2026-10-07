@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bqqo3ot4wjqot"
-path="res://.godot/imported/tile_heart.png-8515e7971f03b6f94230825c75d4c759.ctex"
+path="res://.godot/imported/tile_heart.png-4e52659730fb0df1f2805d523475e7b0.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://addons/fcollisions/examples/kenney_scribble-platformer/PNG/Default/tile_heart.png"
-dest_files=["res://.godot/imported/tile_heart.png-8515e7971f03b6f94230825c75d4c759.ctex"]
+source_file="res://addons/fightengine/examples/kenney_scribble-platformer/PNG/Default/tile_heart.png"
+dest_files=["res://.godot/imported/tile_heart.png-4e52659730fb0df1f2805d523475e7b0.ctex"]
 
 [params]
 
