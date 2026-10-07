@@ -16,6 +16,7 @@ config/features=PackedStringArray("4.7")
 [autoload]
 
 TickManager="*uid://dy8vdr5610s8i"
+Profily="*uid://qmnu1ehm866e"
 
 [display]
 
@@ -24,7 +25,7 @@ window/stretch/aspect="expand"
 
 [editor_plugins]
 
-enabled=PackedStringArray("res://addons/fightengine/plugin.cfg")
+enabled=PackedStringArray("res://addons/fightengine/plugin.cfg", "res://addons/profily/plugin.cfg")
 
 [fcollision]
 
@@ -33,3 +34,11 @@ config/tick_rate=20
 [fight_engine]
 
 config/tick_rate=20
+
+[profily]
+
+general/mode=1
+general/background_color=Color(0, 0, 0, 0.78431374)
+fps/module_state=2
+audio/module_state=4
+advanced/module_state=4
