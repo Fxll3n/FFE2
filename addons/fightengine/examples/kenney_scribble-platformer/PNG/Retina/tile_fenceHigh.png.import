@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://4ccatb00edsc"
-path="res://.godot/imported/tile_fenceHigh.png-b7c665d55d5d516dc7d0fc8c23aa0b68.ctex"
+path="res://.godot/imported/tile_fenceHigh.png-02fade432f6c3b208cd0d392c5eecfc4.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://addons/fcollisions/examples/kenney_scribble-platformer/PNG/Retina/tile_fenceHigh.png"
-dest_files=["res://.godot/imported/tile_fenceHigh.png-b7c665d55d5d516dc7d0fc8c23aa0b68.ctex"]
+source_file="res://addons/fightengine/examples/kenney_scribble-platformer/PNG/Retina/tile_fenceHigh.png"
+dest_files=["res://.godot/imported/tile_fenceHigh.png-02fade432f6c3b208cd0d392c5eecfc4.ctex"]
 
 [params]
 

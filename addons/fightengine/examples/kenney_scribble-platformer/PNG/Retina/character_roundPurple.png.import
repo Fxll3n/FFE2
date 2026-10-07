@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cms8tmfrgfyxb"
-path="res://.godot/imported/character_roundPurple.png-7f1d928f301e7946ee851205c364bd62.ctex"
+path="res://.godot/imported/character_roundPurple.png-720434425874b9d999decd8a40fc0ffe.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://addons/fcollisions/examples/kenney_scribble-platformer/PNG/Retina/character_roundPurple.png"
-dest_files=["res://.godot/imported/character_roundPurple.png-7f1d928f301e7946ee851205c364bd62.ctex"]
+source_file="res://addons/fightengine/examples/kenney_scribble-platformer/PNG/Retina/character_roundPurple.png"
+dest_files=["res://.godot/imported/character_roundPurple.png-720434425874b9d999decd8a40fc0ffe.ctex"]
 
 [params]
 

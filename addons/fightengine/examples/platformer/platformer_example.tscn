@@ -1,8 +1,20 @@
 [gd_scene format=4 uid="uid://bj2ymtsk6m6lu"]
 
-[ext_resource type="Texture2D" uid="uid://5cp782bfbi1i" path="res://addons/fcollisions/examples/kenney_scribble-platformer/Spritesheet/spritesheet_default.png" id="2_kg6ue"]
-[ext_resource type="PackedScene" uid="uid://c6k57lmssrger" path="res://addons/fcollisions/examples/platformer/spikes.tscn" id="3_d0mtm"]
-[ext_resource type="PackedScene" uid="uid://baqiyr8ygk0i8" path="res://addons/fcollisions/examples/platformer/player.tscn" id="3_kg6ue"]
+[ext_resource type="Texture2D" uid="uid://5cp782bfbi1i" path="res://addons/fightengine/examples/kenney_scribble-platformer/Spritesheet/spritesheet_default.png" id="2_kg6ue"]
+[ext_resource type="PackedScene" uid="uid://c6k57lmssrger" path="res://addons/fightengine/examples/platformer/spikes.tscn" id="3_d0mtm"]
+[ext_resource type="PackedScene" uid="uid://baqiyr8ygk0i8" path="res://addons/fightengine/examples/platformer/player.tscn" id="3_kg6ue"]
+[ext_resource type="Script" uid="uid://chchi73tsrvat" path="res://addons/fightengine/examples/platformer/toggle_debug.gd" id="4_qv7xk"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_qv7xk"]
+bg_color = Color(0, 0, 0, 0.6)
+corner_radius_top_left = 6
+corner_radius_top_right = 6
+corner_radius_bottom_right = 6
+corner_radius_bottom_left = 6
+expand_margin_left = 5.0
+expand_margin_top = 5.0
+expand_margin_right = 5.0
+expand_margin_bottom = 5.0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_kg6ue"]
 texture = ExtResource("2_kg6ue")
@@ -294,6 +306,19 @@ physics_layer_0/collision_layer = 1
 sources/1 = SubResource("TileSetAtlasSource_yr5hm")
 
 [node name="Platformer" type="Node2D" unique_id=321915629]
+
+[node name="ToggleDebug" type="CheckButton" parent="." unique_id=1809273294]
+offset_left = -535.0
+offset_top = -360.0
+offset_right = -382.0
+offset_bottom = -329.0
+focus_mode = 0
+theme_override_styles/normal = SubResource("StyleBoxFlat_qv7xk")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_qv7xk")
+theme_override_styles/hover = SubResource("StyleBoxFlat_qv7xk")
+theme_override_styles/hover_pressed = SubResource("StyleBoxFlat_qv7xk")
+text = "Toggle Debug"
+script = ExtResource("4_qv7xk")
 
 [node name="World" type="Node" parent="." unique_id=1921433042]
 

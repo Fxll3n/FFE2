@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://5cp782bfbi1i"
-path="res://.godot/imported/spritesheet_default.png-e35d7a78a9f6f672e7e65b42619812a3.ctex"
+path="res://.godot/imported/spritesheet_default.png-731b27aa359d69bd639e4919f9b71891.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://addons/fcollisions/examples/kenney_scribble-platformer/Spritesheet/spritesheet_default.png"
-dest_files=["res://.godot/imported/spritesheet_default.png-e35d7a78a9f6f672e7e65b42619812a3.ctex"]
+source_file="res://addons/fightengine/examples/kenney_scribble-platformer/Spritesheet/spritesheet_default.png"
+dest_files=["res://.godot/imported/spritesheet_default.png-731b27aa359d69bd639e4919f9b71891.ctex"]
 
 [params]
 

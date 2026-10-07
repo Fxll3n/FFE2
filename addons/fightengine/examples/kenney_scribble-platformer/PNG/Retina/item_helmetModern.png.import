@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bfs5i2wae1u2n"
-path="res://.godot/imported/item_helmetModern.png-9f760899d40e7b5040c0ee1bc8be4d89.ctex"
+path="res://.godot/imported/item_helmetModern.png-827b03f11110dc8fb701aa2031fd71ca.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://addons/fcollisions/examples/kenney_scribble-platformer/PNG/Retina/item_helmetModern.png"
-dest_files=["res://.godot/imported/item_helmetModern.png-9f760899d40e7b5040c0ee1bc8be4d89.ctex"]
+source_file="res://addons/fightengine/examples/kenney_scribble-platformer/PNG/Retina/item_helmetModern.png"
+dest_files=["res://.godot/imported/item_helmetModern.png-827b03f11110dc8fb701aa2031fd71ca.ctex"]
 
 [params]
 

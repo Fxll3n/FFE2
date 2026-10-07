@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bfr3lu7xgs3hl"
-path="res://.godot/imported/tile_grass.png-03485bfdda3c731baeee20135022fbac.ctex"
+path="res://.godot/imported/tile_grass.png-51266b0bfa44d4f1369edf7f1171793d.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://addons/fcollisions/examples/kenney_scribble-platformer/PNG/Retina/tile_grass.png"
-dest_files=["res://.godot/imported/tile_grass.png-03485bfdda3c731baeee20135022fbac.ctex"]
+source_file="res://addons/fightengine/examples/kenney_scribble-platformer/PNG/Retina/tile_grass.png"
+dest_files=["res://.godot/imported/tile_grass.png-51266b0bfa44d4f1369edf7f1171793d.ctex"]
 
 [params]
 

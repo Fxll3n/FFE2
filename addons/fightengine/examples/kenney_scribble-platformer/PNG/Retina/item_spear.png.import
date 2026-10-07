@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://c0fve5fne40wb"
-path="res://.godot/imported/item_spear.png-7d6c0b5e2e8824f8004955908089b859.ctex"
+path="res://.godot/imported/item_spear.png-cd3d65396bc31de35b4b91f0f9b94d9c.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://addons/fcollisions/examples/kenney_scribble-platformer/PNG/Retina/item_spear.png"
-dest_files=["res://.godot/imported/item_spear.png-7d6c0b5e2e8824f8004955908089b859.ctex"]
+source_file="res://addons/fightengine/examples/kenney_scribble-platformer/PNG/Retina/item_spear.png"
+dest_files=["res://.godot/imported/item_spear.png-cd3d65396bc31de35b4b91f0f9b94d9c.ctex"]
 
 [params]
 

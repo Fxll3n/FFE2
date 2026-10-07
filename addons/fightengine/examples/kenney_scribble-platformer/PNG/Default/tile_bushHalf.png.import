@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://1512lkrnf6oj"
-path="res://.godot/imported/tile_bushHalf.png-bb053976ce6497b874142331e8daa118.ctex"
+path="res://.godot/imported/tile_bushHalf.png-c380e59d72700f4eccb229a2f4dfb00a.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://addons/fcollisions/examples/kenney_scribble-platformer/PNG/Default/tile_bushHalf.png"
-dest_files=["res://.godot/imported/tile_bushHalf.png-bb053976ce6497b874142331e8daa118.ctex"]
+source_file="res://addons/fightengine/examples/kenney_scribble-platformer/PNG/Default/tile_bushHalf.png"
+dest_files=["res://.godot/imported/tile_bushHalf.png-c380e59d72700f4eccb229a2f4dfb00a.ctex"]
 
 [params]
 

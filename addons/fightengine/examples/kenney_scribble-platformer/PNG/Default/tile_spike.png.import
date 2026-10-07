@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cl2gso1ee4m7a"
-path="res://.godot/imported/tile_spike.png-e4c78a8b91547519bb35b9e0ea725830.ctex"
+path="res://.godot/imported/tile_spike.png-b9f6fdd82d2c1612b9b28a9db3089406.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://addons/fcollisions/examples/kenney_scribble-platformer/PNG/Default/tile_spike.png"
-dest_files=["res://.godot/imported/tile_spike.png-e4c78a8b91547519bb35b9e0ea725830.ctex"]
+source_file="res://addons/fightengine/examples/kenney_scribble-platformer/PNG/Default/tile_spike.png"
+dest_files=["res://.godot/imported/tile_spike.png-b9f6fdd82d2c1612b9b28a9db3089406.ctex"]
 
 [params]
 

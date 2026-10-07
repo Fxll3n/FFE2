@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://be3cv7wjhgwch"
-path="res://.godot/imported/background_cloudB.png-a8ecc7dc65c82ba2f1eb963190720fef.ctex"
+path="res://.godot/imported/background_cloudB.png-317a40475c8e3dd9d686322d1dfbdb0e.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://addons/fcollisions/examples/kenney_scribble-platformer/PNG/Retina/background_cloudB.png"
-dest_files=["res://.godot/imported/background_cloudB.png-a8ecc7dc65c82ba2f1eb963190720fef.ctex"]
+source_file="res://addons/fightengine/examples/kenney_scribble-platformer/PNG/Retina/background_cloudB.png"
+dest_files=["res://.godot/imported/background_cloudB.png-317a40475c8e3dd9d686322d1dfbdb0e.ctex"]
 
 [params]
 

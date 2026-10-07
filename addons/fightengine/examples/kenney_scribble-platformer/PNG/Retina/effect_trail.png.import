@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://b3obwoblnk2de"
-path="res://.godot/imported/effect_trail.png-6e094c3eeff03172547add62244e553c.ctex"
+path="res://.godot/imported/effect_trail.png-b5f743ac70aa51f9bc5b14d5b38f7444.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://addons/fcollisions/examples/kenney_scribble-platformer/PNG/Retina/effect_trail.png"
-dest_files=["res://.godot/imported/effect_trail.png-6e094c3eeff03172547add62244e553c.ctex"]
+source_file="res://addons/fightengine/examples/kenney_scribble-platformer/PNG/Retina/effect_trail.png"
+dest_files=["res://.godot/imported/effect_trail.png-b5f743ac70aa51f9bc5b14d5b38f7444.ctex"]
 
 [params]
 

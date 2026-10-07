@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dx0h8tpb50xho"
-path="res://.godot/imported/ui_numPeriod.png-7d9500d7908d2cdd5842e6ca2536af3f.ctex"
+path="res://.godot/imported/ui_numPeriod.png-4df74f8887ae1c5503f29324ac83b996.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://addons/fcollisions/examples/kenney_scribble-platformer/PNG/Default/ui_numPeriod.png"
-dest_files=["res://.godot/imported/ui_numPeriod.png-7d9500d7908d2cdd5842e6ca2536af3f.ctex"]
+source_file="res://addons/fightengine/examples/kenney_scribble-platformer/PNG/Default/ui_numPeriod.png"
+dest_files=["res://.godot/imported/ui_numPeriod.png-4df74f8887ae1c5503f29324ac83b996.ctex"]
 
 [params]
 
