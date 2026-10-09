@@ -6,9 +6,13 @@ const SETTING_PATH: String = "fight_engine/config/"
 func _enable_plugin() -> void:
 	add_autoload_singleton("TickManager", "res://addons/fightengine/scripts/tick_manager.gd" )
 	
-	add_custom_type("CollisionBox2D", "Node2D", preload("res://addons/fightengine/scripts/collision_box.gd"), preload("res://addons/fightengine/icon.png"))
-	add_custom_type("HitBox2D", "CollisionBox2D", preload("res://addons/fightengine/scripts/hit_box.gd"), preload("res://addons/fightengine/icon.png"))
-	add_custom_type("HurtBox2D", "CollisionBox2D", preload("res://addons/fightengine/scripts/hurt_box.gd"), preload("res://addons/fightengine/icon.png"))
+	add_custom_type("CollisionBox2D", "Node2D", preload("res://addons/fightengine/scripts/2d/collision_box_2d.gd"), preload("res://addons/fightengine/icon.png"))
+	add_custom_type("HitBox2D", "CollisionBox2D", preload("res://addons/fightengine/scripts/2d/hit_box_2d.gd"), preload("res://addons/fightengine/icon.png"))
+	add_custom_type("HurtBox2D", "CollisionBox2D", preload("res://addons/fightengine/scripts/2d/hurt_box_2d.gd"), preload("res://addons/fightengine/icon.png"))
+	
+	add_custom_type("CollisionBox2D", "Node2D", preload("res://addons/fightengine/scripts/3d/collision_box_3d.gd"), preload("res://addons/fightengine/icon.png"))
+	add_custom_type("HitBox2D", "CollisionBox2D", preload("res://addons/fightengine/scripts/3d/hit_box_3d.gd"), preload("res://addons/fightengine/icon.png"))
+	add_custom_type("HurtBox2D", "CollisionBox2D", preload("res://addons/fightengine/scripts/3d/hurt_box_3d.gd"), preload("res://addons/fightengine/icon.png"))
 	
 	_add_setting("tick_rate", 20,
 		"Amount of collision ticks a second. Higher tickrates will create more precise collision at a higher process cost."

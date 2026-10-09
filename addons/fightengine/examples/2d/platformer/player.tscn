@@ -1,0 +1,31 @@
+[gd_scene format=3 uid="uid://baqiyr8ygk0i8"]
+
+[ext_resource type="Script" uid="uid://diks8jqdbx5gw" path="res://addons/fightengine/examples/2d/platformer/player.gd" id="1_2jdav"]
+[ext_resource type="Texture2D" uid="uid://5cp782bfbi1i" path="res://addons/fightengine/assets/kenney_scribble-platformer/Spritesheet/spritesheet_default.png" id="1_7rmlj"]
+[ext_resource type="Script" uid="uid://dyaep4no4p8vl" path="res://addons/fightengine/scripts/2d/hurt_box_2d.gd" id="2_2jdav"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_bnxru"]
+radius = 16.0
+height = 62.0
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ya42q"]
+size = Vector2(38, 60)
+
+[node name="Player" type="CharacterBody2D" unique_id=1926390832]
+script = ExtResource("1_2jdav")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1032528165]
+texture = ExtResource("1_7rmlj")
+region_enabled = true
+region_rect = Rect2(586, 191, 45, 64)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=838010858]
+shape = SubResource("CapsuleShape2D_bnxru")
+
+[node name="HurtBox2D" type="Node2D" parent="." unique_id=1198287395]
+visible = false
+script = ExtResource("2_2jdav")
+grace_ticks = 8
+active = true
+shape = SubResource("RectangleShape2D_ya42q")
+metadata/_custom_type_script = "uid://dyaep4no4p8vl"

@@ -24,6 +24,12 @@ FFE2 solves this by introducing a **query-tick based system**:
 2. Place the `ffe2` folder into your Godot project's `addons/` directory.
 3. Open your project, go to **Project > Project Settings > Plugins**, and check the "Enable" box next to FFE2.
 
+## Ackowledgements
+### Examples Assets:
+- **[Kenney's Scribble Platformer Assets](https://kenney.nl/assets/scribble-platformer)**: Licensed under the Creative Commons CC0 license.
+- **[Voxy's @icons Icon Pack](https://store.godotengine.org/asset/voxy/at-icons/)**: Licensed under the MIT license.
+- **[GDQuest's GoBot Model'](https://github.com/gdquest-demos/godot-4-3D-Characters)**: All godot resources (scripts, scenes, etc.) are licensed under the MIT license. The Model and art assets are licensed under the Creative Commons [CC-BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/).
+
 ## Roadmap
 
 - [ ] **TickManager Autoload:** A centralized system to manage ticks and tick-based callbacks without relying on signals.

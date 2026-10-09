@@ -1,0 +1,158 @@
+[gd_scene format=3 uid="uid://bliquejga3utc"]
+
+[ext_resource type="Texture2D" uid="uid://b2f8h0y3n63rp" path="res://addons/fightengine/assets/kenney_scribble-platformer/PNG/Default/character_squarePurple.png" id="1_5ws5s"]
+[ext_resource type="Shader" uid="uid://b4k51bej077o0" path="res://addons/fightengine/examples/2d/fighter_anim_node/hit_flash.gdshader" id="1_ahmvo"]
+[ext_resource type="Script" uid="uid://c5tcia30xlrne" path="res://addons/fightengine/examples/2d/fighter_anim_node/dummy.gd" id="1_fo4ll"]
+[ext_resource type="Script" uid="uid://dyaep4no4p8vl" path="res://addons/fightengine/scripts/2d/hurt_box_2d.gd" id="2_ahmvo"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_fo4ll"]
+shader = ExtResource("1_ahmvo")
+shader_parameter/enabled = false
+shader_parameter/overylay_color = Color(1, 1, 1, 1)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ulcs2"]
+size = Vector2(40, 60)
+
+[sub_resource type="Animation" id="Animation_ahmvo"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:material:shader_parameter/enabled")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Sprite2D:material:shader_parameter/overylay_color")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Sprite2D:scale")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(1, 1)]
+}
+
+[sub_resource type="Animation" id="Animation_5ws5s"]
+resource_name = "hit"
+length = 0.5333366944823414
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:material:shader_parameter/enabled")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.10000001, 0.13333334, 0.33333334, 0.53333336),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
+"update": 1,
+"values": [true, true, false, true, false]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Sprite2D:material:shader_parameter/overylay_color")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Sprite2D:scale")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 0.10000001, 0.13333334, 0.23333333),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(0.9, 0.9), Vector2(0.9, 0.9), Vector2(0.8, 0.8), Vector2(1, 1)]
+}
+
+[sub_resource type="Animation" id="Animation_fo4ll"]
+resource_name = "idle"
+length = 0.03333666840530932
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:material:shader_parameter/enabled")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Sprite2D:material:shader_parameter/overylay_color")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Sprite2D:scale")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(1, 1)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_ahmvo"]
+_data = {
+&"RESET": SubResource("Animation_ahmvo"),
+&"hit": SubResource("Animation_5ws5s"),
+&"idle": SubResource("Animation_fo4ll")
+}
+
+[node name="Dummy" type="Node2D" unique_id=1992474243]
+script = ExtResource("1_fo4ll")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1803317565]
+material = SubResource("ShaderMaterial_fo4ll")
+texture = ExtResource("1_5ws5s")
+
+[node name="HurtBox2D" type="Node2D" parent="." unique_id=820460879]
+script = ExtResource("2_ahmvo")
+grace_ticks = 10
+active = true
+shape = SubResource("RectangleShape2D_ulcs2")
+metadata/_custom_type_script = "uid://dyaep4no4p8vl"
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=495121787]
+libraries/ = SubResource("AnimationLibrary_ahmvo")
