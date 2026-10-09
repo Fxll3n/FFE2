@@ -1,0 +1,66 @@
+[gd_scene format=3 uid="uid://bsrmmgg1oqobo"]
+
+[ext_resource type="PackedScene" uid="uid://pwr2jjcyo7m2" path="res://addons/fightengine/examples/3d/3d_demo/fighter_3d.tscn" id="1_ma3s5"]
+[ext_resource type="Script" uid="uid://c703bu088c82o" path="res://addons/fightengine/scripts/3d/hit_box_3d.gd" id="2_q4dw2"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_ulcs2"]
+size = Vector3(5.307495, 5.830078, 9.128418)
+
+[sub_resource type="QuadMesh" id="QuadMesh_ulcs2"]
+size = Vector2(20, 5)
+
+[sub_resource type="WorldBoundaryShape3D" id="WorldBoundaryShape3D_ulcs2"]
+
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_5ls8s"]
+
+[sub_resource type="Sky" id="Sky_ipl4g"]
+sky_material = SubResource("ProceduralSkyMaterial_5ls8s")
+
+[sub_resource type="Environment" id="Environment_ulcs2"]
+background_mode = 2
+sky = SubResource("Sky_ipl4g")
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_5ls8s"]
+size = Vector3(1, 2, 1)
+
+[node name="3dDemo" type="Node3D" unique_id=1647221268]
+
+[node name="GoBot" parent="." unique_id=1421567565 instance=ExtResource("1_ma3s5")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.5630145, 0, 0)
+
+[node name="Camera3D" type="Camera3D" parent="GoBot" unique_id=150442065]
+transform = Transform3D(1, 0, 0, 0, 0.9953845, -0.09596738, 0, 0.09596738, 0.9953845, -0.0045087337, 0.9553293, 3.4907007)
+fov = 90.0
+
+[node name="Bounds" type="StaticBody3D" parent="." unique_id=1420371462]
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="Bounds" unique_id=1965912508]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.8883343, 2.8211126, 2.3813477)
+shape = SubResource("BoxShape3D_ulcs2")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Bounds" unique_id=146647607]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, 1, 0, -1, -4.371139e-08, -0.0022792816, -0.0131287575, 0.0036621094)
+mesh = SubResource("QuadMesh_ulcs2")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Bounds" unique_id=1331149518]
+shape = SubResource("WorldBoundaryShape3D_ulcs2")
+
+[node name="CollisionShape3D3" type="CollisionShape3D" parent="Bounds" unique_id=719913317]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.627014, 2.415039, 1.1906738)
+shape = SubResource("BoxShape3D_ulcs2")
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=512201703]
+environment = SubResource("Environment_ulcs2")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=400397643]
+transform = Transform3D(0.93606144, -0.10809966, 0.33481848, -0.34622163, -0.45234373, 0.8218977, 0.06260619, -0.88526815, -0.46084797, 3.1452484, 6.142318, -5.9961343)
+shadow_enabled = true
+
+[node name="HurtZone" type="Node3D" parent="." unique_id=1965064956]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.461689, 0, 0)
+
+[node name="HitBox3D" type="Node3D" parent="HurtZone" unique_id=2088327168]
+script = ExtResource("2_q4dw2")
+active = true
+shape = SubResource("BoxShape3D_5ls8s")
+metadata/_custom_type_script = "uid://c703bu088c82o"
