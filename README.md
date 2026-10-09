@@ -32,7 +32,7 @@ FFE2 solves this by introducing a **query-tick based system**:
 
 ## Roadmap
 
-- [ ] **TickManager Autoload:** A centralized system to manage ticks and tick-based callbacks without relying on signals.
+- [X] **TickManager Autoload:** A centralized system to manage ticks and tick-based callbacks without relying on signals.
 - [ ] **Multiplayer Friendly:** Refactoring and enhancements to ensure the system plays nicely with netcode.
 - [ ] **"True" Frame-Data System:** An alternative collision system based purely on frame-data rather than animation keyframes.
 
