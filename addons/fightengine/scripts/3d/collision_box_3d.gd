@@ -29,8 +29,12 @@ class_name CollisionBox3D extends Node3D
 @export var shape: Shape3D:
 	set(value):
 		shape = value
-		if collider == null: return
-		collider.shape = value
+		
+		if collider != null:
+			collider.shape = value
+		
+		if Engine.is_editor_hint():
+			update_gizmos()
 
 ## The physics collision layer this box belongs to.
 @export_flags_2d_physics var collision_layer: int = 1:
@@ -105,7 +109,7 @@ func _intersect() -> void:
 	var intersections := area.get_world_3d().direct_space_state.intersect_shape(query)
 	
 	for i in intersections:
-		var other_area := i["collider"] as Area2D
+		var other_area := i["collider"] as Area3D
 		
 		if other_area == null:
 			continue

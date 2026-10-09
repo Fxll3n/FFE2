@@ -3,6 +3,10 @@ extends EditorPlugin
 
 const SETTING_PATH: String = "fight_engine/config/"
 
+const CollisionBox3DGizmo = preload("res://addons/fightengine/scripts/3d/collision_box_3d_gizmo.gd")
+
+var collision_box_3d_gizmo: EditorNode3DGizmoPlugin
+
 func _enable_plugin() -> void:
 	add_autoload_singleton("TickManager", "res://addons/fightengine/scripts/tick_manager.gd" )
 	
@@ -28,6 +32,12 @@ func _disable_plugin() -> void:
 	
 	_remove_setting("tick_rate")
 
+func _enter_tree() -> void:
+	collision_box_3d_gizmo = CollisionBox3DGizmo.new()
+	add_node_3d_gizmo_plugin(collision_box_3d_gizmo)
+
+func _exit_tree() -> void:
+	remove_node_3d_gizmo_plugin(collision_box_3d_gizmo)
 
 func _add_setting(setting_key: String, value: Variant, hint_string: String = "", type: int = typeof(value), hint: int = PROPERTY_HINT_NONE) -> void:
 	var id := SETTING_PATH + setting_key

@@ -1,4 +1,4 @@
-class_name GobotSkin extends Node3D
+extends Node3D
 
 ## Emitted when Gobot's feet hit the ground will running.
 @warning_ignore("unused_signal")
@@ -124,4 +124,4 @@ func hurt() -> void:
 	_animation_tree.set(_hurt_shot_path, AnimationNodeOneShot.ONE_SHOT_REQUEST_FIRE)
 	var tween := create_tween().set_ease(Tween.EASE_OUT)
 	tween.tween_property(self, "scale", Vector3(1.2, 0.8, 1.2), 0.1)
-	tween.tween_property(self, "scale", Vector3.ONE, 0.2)
+	tween.parallel().tween_property(self, "scale", Vector3.ONE, 0.2)

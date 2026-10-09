@@ -28,12 +28,12 @@ func _tick() -> void:
 		box._intersect()
 
 func register_box(box: Node) -> void:
-	if box is not CollisionBox2D or box is not CollisionBox3D: return
+	if box is not CollisionBox2D and box is not CollisionBox3D: return
 	if box == null or active_boxes.has(box): return
 	active_boxes.insert(0, box)
 
 func unregister_box(box: Node) -> void:
-	if box is not CollisionBox2D or box is not CollisionBox3D: return
+	if box is not CollisionBox2D and box is not CollisionBox3D: return
 	if box == null or not active_boxes.has(box): return
 	active_boxes.erase(box)
 
