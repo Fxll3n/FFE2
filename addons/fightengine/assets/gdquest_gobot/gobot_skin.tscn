@@ -1,9 +1,9 @@
 [gd_scene format=3 uid="uid://cy36aygvs66pn"]
 
-[ext_resource type="PackedScene" uid="uid://kod0awm1ha4o" path="res://addons/fightengine/assets/gdquest_gobot/model/gobot.glb" id="1_qg1mb"]
+[ext_resource type="PackedScene" uid="uid://b0sdiag4hhvow" path="res://addons/fightengine/assets/gdquest_gobot/model/gobot.glb" id="1_qg1mb"]
 [ext_resource type="Script" uid="uid://02pjlm1ilk3w" path="res://addons/fightengine/assets/gdquest_gobot/gobot_skin.gd" id="1_rwke8"]
-[ext_resource type="Texture2D" uid="uid://cfdf62ci74tew" path="res://addons/fightengine/assets/gdquest_gobot/model/textures/closed_eyes.png" id="3_atmtp"]
-[ext_resource type="Texture2D" uid="uid://dq675fmt1rg8c" path="res://addons/fightengine/assets/gdquest_gobot/model/textures/open_eye.png" id="3_aysq5"]
+[ext_resource type="Texture2D" uid="uid://cbvy301oyym2a" path="res://addons/fightengine/assets/gdquest_gobot/model/textures/closed_eyes.png" id="3_atmtp"]
+[ext_resource type="Texture2D" uid="uid://et2ulh2wyvtn" path="res://addons/fightengine/assets/gdquest_gobot/model/textures/open_eye.png" id="3_aysq5"]
 [ext_resource type="AnimationLibrary" uid="uid://k45w5evgjbtp" path="res://addons/fightengine/assets/gdquest_gobot/custom_animations/custom_lib.res" id="6_vjupt"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_t4001"]
@@ -13,14 +13,14 @@ albedo_color = Color(0.972549, 0.27451, 0, 0)
 emission_enabled = true
 emission = Color(0.972549, 0.27451, 0, 1)
 
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_n1uak"]
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_7qart"]
 resource_local_to_scene = true
 albedo_texture = ExtResource("3_aysq5")
 roughness = 0.6
 uv1_offset = Vector3(0.1, 0, 0)
 texture_repeat = false
 
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_jsvsc"]
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_g8vc0"]
 resource_local_to_scene = true
 albedo_texture = ExtResource("3_aysq5")
 roughness = 0.6
@@ -2169,43 +2169,43 @@ closed_eye = ExtResource("3_atmtp")
 
 [node name="gobot" parent="." unique_id=772802592 instance=ExtResource("1_qg1mb")]
 
-[node name="Skeleton3D" parent="gobot/Armature" parent_id_path=PackedInt32Array(772802592, 792737526) index="0" unique_id=1254390869]
-bones/0/position = Vector3(0.097547, 0.09890493, -0.08381692)
-bones/0/rotation = Quaternion(0.78446734, -2.7108513e-08, -3.4290117e-08, 0.62017024)
-bones/1/position = Vector3(-0.097547, 0.18075041, -0.14572656)
-bones/1/rotation = Quaternion(0.91647553, 1.7488533e-08, -4.006043e-08, -0.40009066)
-bones/2/position = Vector3(0, 0.310433, 0)
-bones/2/rotation = Quaternion(-0.034894295, -0.017131, -0.000598227, 0.99924403)
-bones/3/rotation = Quaternion(1, 5.5486876e-11, -7.460984e-08, 6.1654813e-18)
-bones/4/rotation = Quaternion(-0.088563345, -0.017524553, -0.004191229, 0.99590755)
-bones/5/rotation = Quaternion(0.64639914, 8.66524e-07, -2.2068052e-05, 0.76299953)
-bones/6/rotation = Quaternion(0.1688956, -0.016678378, 0.001696238, 0.98549134)
-bones/7/rotation = Quaternion(0.7004944, -8.0924605e-07, 2.3973435e-05, 0.7136578)
-bones/8/rotation = Quaternion(-0.6602958, -0.09125113, -0.67424625, 0.31792238)
-bones/9/rotation = Quaternion(3.915338e-07, 4.5595544e-07, -0.12744418, 0.9918458)
-bones/10/rotation = Quaternion(-0.28973198, -0.63745797, -0.217439, 0.680017)
-bones/11/rotation = Quaternion(0.48790604, -0.017439904, 0.008545451, 0.87268007)
-bones/12/rotation = Quaternion(-0.3712239, -0.0019769496, 0.0058536697, 0.9285228)
-bones/13/rotation = Quaternion(-0.5023331, 1.5028704e-05, -2.8526509e-05, 0.86467415)
-bones/14/rotation = Quaternion(-0.3712239, -0.0019769596, 0.0058536897, 0.9285228)
-bones/15/rotation = Quaternion(-0.5023331, 1.5019806e-05, -2.8522405e-05, 0.86467415)
-bones/16/rotation = Quaternion(-0.6512611, 0.30503532, 0.6874188, 0.10133114)
-bones/17/rotation = Quaternion(2.5921193e-07, -6.00754e-07, 0.37078094, 0.92872036)
-bones/18/rotation = Quaternion(-0.28973198, 0.63745797, 0.217439, 0.680017)
-bones/19/rotation = Quaternion(0.48790604, 0.017439902, -0.008545431, 0.87268007)
-bones/20/rotation = Quaternion(-0.3712239, 0.0019769596, -0.005853659, 0.9285228)
-bones/21/rotation = Quaternion(-0.5023331, -1.50049045e-05, 2.8498505e-05, 0.86467415)
-bones/22/rotation = Quaternion(-0.3712239, 0.0019769596, -0.0058536693, 0.9285228)
-bones/23/rotation = Quaternion(-0.5023331, -1.50212045e-05, 2.8516306e-05, 0.86467415)
+[node name="Skeleton3D" parent="gobot/Armature" parent_id_path=PackedInt32Array(772802592, 692234391) index="0" unique_id=2096116877]
+bones/0/position = Vector3(0.125361, 0.0989139, 0.0728901)
+bones/0/rotation = Quaternion(0.77254915, 0.10769103, -0.13622104, 0.61074907)
+bones/1/position = Vector3(-0.109875, 0.0989111, -0.0510765)
+bones/1/rotation = Quaternion(0.6793683, -0.31008515, 0.39223418, 0.5370832)
+bones/2/position = Vector3(0, 0.3710925, 0)
+bones/2/rotation = Quaternion(0.06974918, -0.014458637, 0.001011045, 0.9974593)
+bones/3/rotation = Quaternion(1, -1.4550273e-10, -7.7357285e-08, 3.759141e-09)
+bones/4/rotation = Quaternion(-0.28351694, -0.18452252, -0.025820749, 0.9406928)
+bones/5/rotation = Quaternion(0.04697292, 1.1304195e-06, -1.6048448e-06, 0.99889624)
+bones/6/rotation = Quaternion(-0.16407925, 0.5249474, 0.14646687, 0.82222605)
+bones/7/rotation = Quaternion(0.3401889, -1.0615865e-06, 1.1640261e-05, 0.9403572)
+bones/8/rotation = Quaternion(-0.613762, -0.2860321, -0.6905434, 0.25422746)
+bones/9/rotation = Quaternion(2.1693694e-07, 5.3554083e-07, -0.3950289, 0.91866875)
+bones/10/rotation = Quaternion(-0.28973204, -0.6374582, -0.21743803, 0.6800171)
+bones/11/rotation = Quaternion(0.48790604, -0.017439902, 0.008545421, 0.87268007)
+bones/12/rotation = Quaternion(-0.3712239, -0.0019769692, 0.005853659, 0.9285228)
+bones/13/rotation = Quaternion(-0.5023331, 1.5004906e-05, -2.8505408e-05, 0.86467415)
+bones/14/rotation = Quaternion(-0.3712239, -0.0019769794, 0.0058536893, 0.9285228)
+bones/15/rotation = Quaternion(-0.5023331, 1.4999904e-05, -2.8506805e-05, 0.86467415)
+bones/16/rotation = Quaternion(-0.69939363, 0.25004318, 0.60365754, 0.2896974)
+bones/17/rotation = Quaternion(2.2720293e-07, -5.847489e-07, 0.3950289, 0.91866875)
+bones/18/rotation = Quaternion(-0.28973204, 0.6374582, 0.21743803, 0.6800171)
+bones/19/rotation = Quaternion(0.48790604, 0.017439902, -0.008545411, 0.87268007)
+bones/20/rotation = Quaternion(-0.3712239, 0.0019769697, -0.005853649, 0.9285228)
+bones/21/rotation = Quaternion(-0.5023331, -1.4988003e-05, 2.8498605e-05, 0.86467415)
+bones/22/rotation = Quaternion(-0.3712239, 0.0019769797, -0.005853679, 0.9285228)
+bones/23/rotation = Quaternion(-0.5023331, -1.5003405e-05, 2.8491406e-05, 0.86467415)
 bones/24/position = Vector3(0, 0.189977, 0)
-bones/24/rotation = Quaternion(7.8287493e-10, 0.029463483, 6.344443e-11, 0.9995659)
+bones/24/rotation = Quaternion(-0.06975651, 4.5896506e-08, 3.0345004e-09, 0.99756414)
 
-[node name="Gobot" parent="gobot/Armature/Skeleton3D" index="0" unique_id=719232644]
+[node name="Gobot" parent="gobot/Armature/Skeleton3D" index="0" unique_id=1730629769]
 material_overlay = SubResource("StandardMaterial3D_t4001")
-surface_material_override/1 = SubResource("StandardMaterial3D_n1uak")
-surface_material_override/2 = SubResource("StandardMaterial3D_jsvsc")
+surface_material_override/1 = SubResource("StandardMaterial3D_7qart")
+surface_material_override/2 = SubResource("StandardMaterial3D_g8vc0")
 
-[node name="AnimationPlayer" parent="gobot" index="1" unique_id=625021773]
+[node name="AnimationPlayer" parent="gobot" index="1" unique_id=359758799]
 libraries/ = SubResource("AnimationLibrary_03he3")
 libraries/custom_lib = ExtResource("6_vjupt")
 

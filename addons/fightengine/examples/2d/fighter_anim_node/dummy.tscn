@@ -1,9 +1,9 @@
 [gd_scene format=3 uid="uid://bliquejga3utc"]
 
-[ext_resource type="Texture2D" uid="uid://b2f8h0y3n63rp" path="res://addons/fightengine/assets/kenney_scribble-platformer/PNG/Default/character_squarePurple.png" id="1_5ws5s"]
+[ext_resource type="Texture2D" uid="uid://cfb0ct8lkrvff" path="res://addons/fightengine/assets/kenney_scribble-platformer/PNG/Default/character_squarePurple.png" id="1_5ws5s"]
 [ext_resource type="Shader" uid="uid://b4k51bej077o0" path="res://addons/fightengine/examples/2d/fighter_anim_node/hit_flash.gdshader" id="1_ahmvo"]
 [ext_resource type="Script" uid="uid://c5tcia30xlrne" path="res://addons/fightengine/examples/2d/fighter_anim_node/dummy.gd" id="1_fo4ll"]
-[ext_resource type="Script" uid="uid://dyaep4no4p8vl" path="res://addons/fightengine/scripts/2d/hurt_box_2d.gd" id="2_ahmvo"]
+[ext_resource type="Script" uid="uid://dyaep4no4p8vl" path="res://addons/fightengine/nodes/2d/hurt_box_2d.gd" id="2_ahmvo"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_fo4ll"]
 shader = ExtResource("1_ahmvo")

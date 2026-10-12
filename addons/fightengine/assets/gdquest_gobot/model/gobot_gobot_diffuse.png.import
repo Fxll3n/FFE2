@@ -2,14 +2,11 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://d2l58ac82kcyp"
+uid="uid://ba1r8p1xlmobo"
 path.s3tc="res://.godot/imported/gobot_gobot_diffuse.png-0cdbe47c0e3690bf4bb6a2d1c21f9270.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
-}
-generator_parameters={
-"md5": "d1db609d65c6f28da6a4f5d00b8f0f52"
 }
 
 [deps]

@@ -1,9 +1,9 @@
 [gd_scene format=3 uid="uid://rc3i5xcpj8qx"]
 
-[ext_resource type="Texture2D" uid="uid://ch0jpyvrsgvgr" path="res://addons/fightengine/assets/kenney_scribble-platformer/PNG/Default/character_roundGreen.png" id="1_kj20x"]
+[ext_resource type="Texture2D" uid="uid://cxubgj04nc4rs" path="res://addons/fightengine/assets/kenney_scribble-platformer/PNG/Default/character_roundGreen.png" id="1_kj20x"]
 [ext_resource type="Script" uid="uid://drptsswq0qo5o" path="res://addons/fightengine/examples/2d/fighter_anim_node/figher.gd" id="1_uw17v"]
-[ext_resource type="Texture2D" uid="uid://c8xjlrf6qg2t0" path="res://addons/fightengine/assets/kenney_scribble-platformer/PNG/Default/character_handGreen.png" id="2_6iodh"]
-[ext_resource type="Script" uid="uid://cenoi8p1pfaxk" path="res://addons/fightengine/scripts/2d/hit_box_2d.gd" id="3_ykj74"]
+[ext_resource type="Texture2D" uid="uid://bcf18qj7cc36q" path="res://addons/fightengine/assets/kenney_scribble-platformer/PNG/Default/character_handGreen.png" id="2_6iodh"]
+[ext_resource type="Script" uid="uid://cenoi8p1pfaxk" path="res://addons/fightengine/nodes/2d/hit_box_2d.gd" id="3_ykj74"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_sh132"]
 radius = 18.0

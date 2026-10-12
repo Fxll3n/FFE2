@@ -16,7 +16,6 @@ config/features=PackedStringArray("4.7")
 [autoload]
 
 TickManager="*uid://dy8vdr5610s8i"
-Profily="*uid://qmnu1ehm866e"
 
 [display]
 
@@ -25,7 +24,7 @@ window/stretch/aspect="expand"
 
 [editor_plugins]
 
-enabled=PackedStringArray("res://addons/fightengine/plugin.cfg", "res://addons/profily/plugin.cfg")
+enabled=PackedStringArray("res://addons/fightengine/plugin.cfg")
 
 [fcollision]
 

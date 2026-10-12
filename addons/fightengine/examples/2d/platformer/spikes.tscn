@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://c6k57lmssrger"]
 
-[ext_resource type="Texture2D" uid="uid://5cp782bfbi1i" path="res://addons/fightengine/assets/kenney_scribble-platformer/Spritesheet/spritesheet_default.png" id="1_wle2c"]
-[ext_resource type="Script" uid="uid://cenoi8p1pfaxk" path="res://addons/fightengine/scripts/2d/hit_box_2d.gd" id="2_x751j"]
+[ext_resource type="Texture2D" uid="uid://duyyb4rh138gl" path="res://addons/fightengine/assets/kenney_scribble-platformer/Spritesheet/spritesheet_default.png" id="1_wle2c"]
+[ext_resource type="Script" uid="uid://cenoi8p1pfaxk" path="res://addons/fightengine/nodes/2d/hit_box_2d.gd" id="2_x751j"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ulcs2"]
 size = Vector2(50, 20)

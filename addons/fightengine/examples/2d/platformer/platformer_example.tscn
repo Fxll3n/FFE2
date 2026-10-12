@@ -1,6 +1,6 @@
 [gd_scene format=4 uid="uid://bj2ymtsk6m6lu"]
 
-[ext_resource type="Texture2D" uid="uid://5cp782bfbi1i" path="res://addons/fightengine/assets/kenney_scribble-platformer/Spritesheet/spritesheet_default.png" id="2_kg6ue"]
+[ext_resource type="Texture2D" uid="uid://duyyb4rh138gl" path="res://addons/fightengine/assets/kenney_scribble-platformer/Spritesheet/spritesheet_default.png" id="2_kg6ue"]
 [ext_resource type="PackedScene" uid="uid://c6k57lmssrger" path="res://addons/fightengine/examples/2d/platformer/spikes.tscn" id="3_d0mtm"]
 [ext_resource type="PackedScene" uid="uid://baqiyr8ygk0i8" path="res://addons/fightengine/examples/2d/platformer/player.tscn" id="3_kg6ue"]
 [ext_resource type="Script" uid="uid://chchi73tsrvat" path="res://addons/fightengine/examples/2d/platformer/toggle_debug.gd" id="4_qv7xk"]

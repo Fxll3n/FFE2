@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://bsrmmgg1oqobo"]
 
 [ext_resource type="PackedScene" uid="uid://pwr2jjcyo7m2" path="res://addons/fightengine/examples/3d/3d_demo/fighter_3d.tscn" id="1_ma3s5"]
-[ext_resource type="Script" uid="uid://c703bu088c82o" path="res://addons/fightengine/scripts/3d/hit_box_3d.gd" id="2_q4dw2"]
+[ext_resource type="Script" uid="uid://c703bu088c82o" path="res://addons/fightengine/nodes/3d/hit_box_3d.gd" id="2_q4dw2"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_ulcs2"]
 size = Vector3(5.307495, 5.830078, 9.128418)
